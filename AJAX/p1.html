@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="assets/js/script.js"></script>
+</head>
+<body>
+    <center>
+        <h1>ajax</h1>
+        <p>asynchronous javascript and xml, or ajax is not a technology in itself but rather an approch to using a number of existing technologies together including html or xhtml, css ,javascript, dom, xml, xslt and most importantly the xmlhttprequest objects</p>
+    </center>
+    <hr>
+
+    <h3>external js function execution using call back (asynchronous)</h3>
+    <p>asynchronous code allows the program to be executed immediately</p>
+    <p>asynchronous programming allows you to perform multiple requests simultaneously and complete more tasks faster.</p>
+
+    <script>
+        function loadScript(path){
+            console.log(path);
+            let script = document.createElement("script");
+            script.src = path;
+            document.head.append(script);
+
+            script.onload = () => {sum(300,200)}
+        }
+        loadScript("assets/js/script.js");
+    </script>
+</body>
+</html>

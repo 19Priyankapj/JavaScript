@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>generation function</h1>
+    </center>
+    <hr>
+    <h2>JAVASCRIPT FUNCTION</h2>
+    <p>1)local function =function A (){}</p>
+    <p>2) expression function = let A = function(){}</p>
+    <p>3) arroe function = let a() = function(){}</p>
+    <p>4)callback function = foreach(function(item){})</p>
+    <p>5) closer function = function A(){function B(){} B();}</p>
+    <p>6) anonymous function or immediate executive of a function() ();</p>
+    <p>7)lamda function =A = (x) => 100+x;</p>
+    <p>8) generation function = function* A(){yield "A"; yield "B"}</p>
+    <hr>
+    <script>
+        function A(){
+            let a=10, b=20, sum;
+            sum = a+b;//30
+
+            return sum;//30
+            return a;//10
+            console.log(Sum);
+        }
+        document.write(A());
+
+        function* users(){
+
+            //yield is akind like an return
+            //return x retuns the value of x , but yield x returns the function
+
+            yield "raju";
+            yield "mahesh";
+            yield "sahana";
+            yield "deepa";
+            yield "soumya";
+
+        }
+        console.log('users function =',users())
+        console.log('users typeof =',typeof(users()))
+
+        for(let item of users()){
+            document.write(`<h3> ${item}</h3>`);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h2>26) filter();</h2>
+        <p>the filter() method creates a new array filled with elements that passs a test provided by a function and its method does not change the originalarray</p>
+    </center>
+    <hr>
+    <p><b>syntax:</b></p>
+    <pre>
+        array.filter(function(parameter){ });
+    </pre>
+    <hr>
+    <script>
+        let age =[32, 33, 16, 40];
+
+        function checkAdult(age){
+            return age>=18;
+
+        }
+        document.write(`<p>array.filter(function(parameter){ }): ${age.filter(checkAdult)}</p>`);
+    </script>
+</body>
+</html>

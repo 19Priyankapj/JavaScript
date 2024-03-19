@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>24)valuesOf();</h1>
+        <p>the valueOf() method returns the array itself and this method does not changes the original array</p>
+        <p>fruits.valueOf() returns the same as fruits</p>
+    </center>
+    <hr>
+    <p><b>syntax:</b></p>
+    <pre>
+        array.valueOf();
+    </pre>
+    <hr>
+
+    <script>
+        let fruits =['banana', 'mango', 'orange', 'apple'];
+
+        document.write(`<p>before the result of array.valueOf(): ${fruits}</p>`);
+
+        let myArray = fruits.valueOf();
+
+        document.write(`<p>before the result of array.valueOf(): ${myArray}</p>`);
+
+        let myArray_1 =fruits;
+
+        document.write(`<p>myArray_1 result:${myArray_1}</p>`);
+
+
+
+    </script>
+
+</body>
+</html>

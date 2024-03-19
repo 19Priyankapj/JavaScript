@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>strict mode </h1>
+        <p>strict mode if u initialize a variable with declaring it using the var keyword</p>
+    </center>
+    <hr>
+    <script>
+        "use strict"
+
+        sayhello();
+        function sayhello(){
+            "use strict";
+            //var str;
+            str = "hello world";
+            console.log(str);
+        }
+
+        function doSomething(){
+            //var msg;
+            msg = "hi there..";
+            return msg;
+        }
+        console.log(doSomething());
+    </script>
+</body>
+</html>

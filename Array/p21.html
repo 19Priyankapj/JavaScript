@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h2>20)every();</h2>
+        <p>the every() method tests the weather all the elements in an array pass the test implemented by the providec function</p>
+        <p>it returns a boolean value</p>
+    </center>
+    <hr>
+    <p><b>syntac:</b></p>
+    <pre>
+        array.every((element)=>{});
+    </pre>
+    <hr>
+    <script>
+        let arry1 =[1, 30, 39, 29, 10, 13];
+        const isBelow_1 = (currentValue) => currentValue < 40;
+
+        document.write(`<p>array.every():${arry1.every(isBelow_1)}</p>`);
+
+        const isBelow_2 = (currentValue) => currentValue < 30;
+
+        document.write(`<p>array.every():${arry1.every(isBelow_2)}</p>`);
+
+
+    </script>
+</body>
+</html>

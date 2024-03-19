@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h2>array methods part- 5</h2>
+    </center>
+    <hr>
+    <center>
+        <h2>25)forEach();</h2>
+        <p>the forEach() method executes a provided function once for each array elements and this method is not executed for empty elements</p>
+    </center>
+
+    <hr>
+    <p><b>syntax:</b></p>
+    <pre>
+        array.forEach(function(prameter){ });
+    </pre>
+    <hr>
+    <script>
+        let numbers =[56, 45, 12, 4];
+
+        numbers.forEach(function(items){
+            document.write(`<p>array .forEach(function(parameter){ }): ${items * 10}</p>`);
+        });
+    </script>
+</body>
+</html>

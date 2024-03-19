@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>email validation</h1>
+    </center>
+    <hr>
+
+    <form autocomplete="off" onsubmit="emailHandler(event)">
+        <label for="">enter email:</label>
+        <input type="text" placeholder="user email" name="email" id="email">
+
+        <strong id="status"></strong>
+        <button type="submit">SUBMIT EMAIL</button>
+    </form>
+
+    <script>
+        function emailHandler(e){
+            e.preventHandler();
+            let email =document.getElementById("email").value
+            let status =document.getElementById("status");
+
+            let regex = /^\S+@\S+$/;
+
+            if (email.length === 0) {
+                status.innerHTML = "please enter email";
+                ststus.style.color = "orangered";
+                
+            } else {
+                if (regex.test(email)=== false) {
+                    status.innerHTML = "invalid email"
+                    status.style.color = "orangered"
+                    
+                } else {
+                    status.innerText = `valid email`;
+                    status.style.color = "green";
+                    
+                }
+                
+            }
+
+        }
+    </script>
+</body>
+</html>

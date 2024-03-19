@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>javascript encapsulation</h1>
+        <p>it is process of binding the data with the function acting on that data. allows us to control the data and validate it</p>
+    </center>
+    <hr>
+    <details>
+        <summary><b>points to remember...</b></summary>
+        <ul>
+            <li>use let and const keyword to make data members private</li>
+            <li>use setter method to set the data and getter method to get the data</li>
+        </ul>
+    </details>
+    <p><b>encapsulation allows us to handle an object using  the following properties</b></p>
+    <p><b>read/write - </b>here, we use setter method to write the data and getter method is used to read the data</p>
+    <p><b>read only-</b> in this case we use getter method only</p>
+    <p><b>write only-</b>in this case we use setter method only</p>
+    <hr>
+
+    <script>
+        class Student{
+            constructor(){
+                let firstname;
+                let lastname;
+                let marks;
+                let mobile;
+            }
+            getFirstName(){
+                return this.firstname;
+            }
+            setFirstName(firstname1){
+                return this.firstname1;
+            }
+            getLastName(){
+                return this.lastname;
+            }
+            setLastName(lastname1){
+                return this.lastname1;
+            }
+            getFullName(){
+                return this.firstname + " "+this.lastname;
+            }
+            getMarks(){
+                return this.marks;
+            }
+            setMarks(marks1){
+                //this.marks= marks1;
+                if(marks1 < 0 || marks1 > 100){
+                    alert("invalid marks...");
+                }else{
+                    this.marks = marks1;
+                }
+            }
+
+        }
+        let student = new Student();
+
+        student.setFirstName('be-practical');
+        document.write(`<p> ${student.getFirstName()}</p>`);
+
+        student.setLastName('tech solutions');
+        document.write(`<p> ${student.getLastName()}</p>`);
+
+        document.write(`<p> ${student.getFullName()}</p>`);
+
+        student.setMarks(40);
+        document.write(`<p> ${student.getMarks()}</p>`);
+
+
+    </script>
+</body>
+
+</html>

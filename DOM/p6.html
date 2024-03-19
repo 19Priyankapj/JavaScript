@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="blk"></section>
+
+    <hr>
+    <button type="button" onclick="addContent()">add block</button>
+    <button type="button" onclick="removeContent()">remove content</button>
+
+    <script>
+        function addContent(){
+            let content = `
+            <h1>welcome to js</h1>
+            <h3>subtitle of js</h3>
+            <p> lorem ipsum dolor sit amet consonent of the gang ststistic og the junction of the java is aplatform independent of the language of para this is very helpful</p>
+            <button type="button" onclick="removecontent()">remove content</button>`;
+
+            document.getElementById('blk').innerHTML = content;   
+        }
+        function removeContent(){
+            document.getElementById('blk').innerHTML="";
+       }
+    </script>
+
+</body>
+</html>

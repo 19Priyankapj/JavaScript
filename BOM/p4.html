@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>window.history</h1>
+    </center>
+
+    <hr>
+
+    <script>
+        function getViews(){
+            alert("you have accessed "+ history .length + "web pages in this session");
+        }
+    </script>
+
+    <button type="button" onclick="getViews();">get views count</button>
+
+    <a href="p5.html">open p5.html</a>
+
+    <script>
+        function goForward(){
+            window.history.forword();
+        }
+    </script>
+
+    <button type="button" onclick="goForword();">go forword</button>
+
+
+
+</body>
+</html>

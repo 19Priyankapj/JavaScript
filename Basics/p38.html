@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>arrays</h1>
+    </center>
+    <hr>
+
+    <script>
+        // ref /instance => x
+
+        let x = new Array();
+        document.write(`<p>X is : ${typeof(x)}</p>`);
+
+        //assign the values
+
+        x[0] = "blue";
+        x[1] = "red";
+        x[2] = "black";
+        x[3] = "crimson";
+
+        document.write(`<h3>${x}</h3>`);
+        document.write(`<h3>${x[3]}</h3>`);
+
+        /*while (condition) {
+        }*/
+
+        /*do{
+        }while (condition); */
+
+        /*for (let index = 0; index < array.lenth; index++){
+            const element = array[index];
+        }*/
+
+        /*array.forEach(element =>{
+            //param =>index
+        });*/
+
+        x.forEach(function(item){
+            document.write(`<h2> FOREACH = ${item}</h2>`)
+        });
+    </script>
+</body>
+</html>

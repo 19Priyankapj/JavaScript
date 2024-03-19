@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Arrays</h1>
+    </center>
+    <hr>
+
+    <pre>
+        Array - is a group of values of similar datatype
+        types
+        1. literal type
+            a.array literal
+            b. array using constructors
+            c. array as a constructor parameter
+        2. object array
+        3. json array )(response of REST[REPRESENTATIONAL STATE TRANSFER] API)
+    </pre>
+    <hr>
+
+    <script>
+        // array literals
+
+        let num = [12,2,44,33,55,66]; /*numbers*/
+        document.write(`<h3> ${num}</h3>`);
+        document.write(`<h3> ${num[4]}</h3>`); 
+
+        var user =['ram', 'venu', 'sourav', "suma", "soumya"]; /*string*/
+        document.wite(`<h3> ${user}</h3>`);
+        document.write(`<h3> ${user[2]}</h3>`); //arrname[index]
+
+        var arr =[true,124,"admin@gmail.com",123.343];/*mix type*/
+        document.wite(`<h3> ${arr}</h3>`);
+        document.write(`<h3> ${arr[0]}</h3>`); //arrname[index]
+
+        for(let index = 0; index <user.length; index++){
+            document.write(`<h3> style='color:orangered;'> ${user[index]}</h3>`);
+        }
+
+
+
+    </script>
+</body>
+</html>

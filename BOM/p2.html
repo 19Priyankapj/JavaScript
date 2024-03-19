@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getURL(){
+            alert("The URL of the page is :"+location.href);
+        }
+    </script>
+
+    <button type="button" onclick="getURL();">get page url</button>
+
+    <script>
+        document.write("<br>"+window.location.protocol +"<br>");
+
+        //prints host
+        document.write(window.location.host + "<br>");
+
+        //prints hostname
+        document.write(window.location.hostname +"<br>");
+
+        //prints port
+        document.write(window.location.port + "<br>");
+
+        //prints pathname
+        document.write(window.location.pathname + "<br>");
+    </script>
+</body>
+</html>

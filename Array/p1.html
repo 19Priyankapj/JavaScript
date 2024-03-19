@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>ARRAY</h1>
+        <P>COLLECTION OF DATA</P>
+    </center>
+    <hr>
+    <h2>by array literal</h2>
+    <hr>
+    <script>
+        let fruits = ["apple", "banana","mango","orange", "papaya",1000];
+
+        document.write(typeof(fruits)+"<br>");
+        document.write(fruits + "<br>");
+        document.write("<hr>");
+
+        document.write("fruits lenth = ", fruits.length + "<br>");
+        document.write("first index value = ", fruits[0] + "<br>");
+        document.write("second index value = ", fruits[1] + "<br>");
+        document.write("<hr>");
+
+        for(let index = 0; index < fruits.length; index++){
+            document.write(fruits[index] + "<br>");
+        }
+    </script>
+    <hr>
+    <script>
+        let empName = new Array();
+        document.write("empName = ",typeof(empName), "<br>");
+
+        empName[0] = "priyanka";
+        empName[1] = "chandana";
+        empName[2] = "soumya";
+        empName[3] = "sahana"; 
+        empName[4] = "madhu";
+        empName[5] = "deepa";
+        empName[6] = "asha";
+        empName[7] = "kiran";
+
+        for(let index = 0; index < enpName.length; index++){
+            document.write(empName[index] + "<br>");
+        }
+    </script>
+    <hr>
+    <center>
+        <h1>by using an array object constructor parameter (using new keyword)</h1>
+    </center>
+    <hr>
+    <script>
+        let studentinfo = new Array("Ak","Pk","KHAKE","SOKE");
+
+        for(let index = 0; index < studentinfo.length; index++){
+            document.write(studentinfo[index] + "<br>");
+        }
+    </script>
+</body>
+</html>

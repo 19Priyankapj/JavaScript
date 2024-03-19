@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        center{
+            padding-top: 50px;
+        }
+        form{
+            border: 2px solid black;
+            background-color: rgb(166, 35, 140);
+            text-align: center;
+            width: 600px;
+            font-size: 20px;
+        }
+        form>hr{
+            width: 250px;
+            border: 1px solid black;}
+        #username,
+        #email,
+        #mobile{
+            width: 270px;
+            padding: 15px;
+            border: 2px solid transparent;
+        }
+        #username:hover{
+            border: 2px solid black;
+        }
+        #email:hover{
+            border: 2px solid black;
+        }
+        #mobile:hover{
+            border: 2px solid black;
+        }
+        #city{
+            width: 300px;
+            padding: 17px;
+            border: 2px solid transparent;
+        }
+        #city:hover{
+            border: 2px solid black;
+        }
+        form>button{
+            width: 100px;
+            margin-bottom: 20px;
+            padding: 15px;}
+        .sub{
+            background-color: rgb(59, 142, 231)
+            ;color: #fff;
+            border: 2px solid transparent;
+        }
+        .res{
+            background-color: red;
+            color: #fff;
+            border: 2px solid transparent;
+        }
+        .sub:hover{
+            border: 2px solid black;
+        }
+        .res:hover{
+            border: 2px solid black;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <center>
+       
+    <form action="" onsubmit="userHandler(event);" autocomplete="off">
+        <h1>Contact Form</h1>
+    
+        <label for="">Username</label><br>
+        <input type="text" name="username" id="username" placeholder=" Enter Username">
+        <br>
+        <strong id="status1"></strong><br><br>
+
+        <label>EMAIL</label><br>
+        <input type="text" name="email" id="email" placeholder=" Enter email"><br>
+        <strong id="status2"></strong><br><br>
+
+        <label for="">Enter user mobile number</label><br>
+        <input type="text" placeholder="Enter mobile number" name="mobile" id="mobile"><br>
+        <strong id="status3"></strong><br><br>
+
+        <label for="">City</label><br>
+        <select name="city" id="city">
+            <option value="null" >enter your city name</option>
+            <option value="1">Hubballi</option>
+            <option value="2">Dharwad</option>
+            <option value="3">Bengaluru</option>
+            <option value="4">belgum</option>
+            <option value="5">Mysore</option>
+        </select><br>
+        <strong id="status4"></strong><br><br>
+
+        <label for="">Gender</label><br>
+        <input type="radio" name="gender" id="male" value="male" >Male
+        <input type="radio" name="gender" id="female" value="female">Female<br>
+        <strong id="status5"></strong><br><br>
+
+        <label for="">Languages (Optional)</label><br>
+        <input type="checkbox" name="kan" id="eng" >english
+        <input type="checkbox" name="eng" id="kan" >kannada
+        <input type="checkbox" name="hin" id="hin" >Hindi
+        <input type="checkbox" name="tam" id="tam" >Tamil
+        <input type="checkbox" name="tel" id="tel" >Telagu<br>
+        <strong id="status6"></strong><br><br>
+
+        <button type="submit" class="sub">SUBMIT </button>
+        <button type="reset" class="res">RESET</button>
+        </form>
+    </center>
+    <script>
+        function userHandler(e){
+            e.preventDefault();
+
+            let user = document.getElementById("username").value;
+            let status1 = document.getElementById("status1");
+
+            if (user.length === 0){
+                status1.innerHTML = "please enter user name";
+                status1.style.color = "red"
+            } else{
+                if(user.length <=5){
+                    status1.innerHTML = "please enter valid user name";
+                    status1.style.color = "red"
+                }else{
+                    status1.innerHTML = "valid user name";
+                    status1.style.color = "green"
+                }
+            }
+
+            //email validation
+            let email = document.getElementById("email").value;
+
+            let status2 = document.getElementById("status2");
+            let regex1 = /^\S+@\S+\.\S+$/;//EXAMPLE :ADMIN@GMAIL.COM
+
+            if (email.length === 0) {
+                status2.innerHTML = "please enter email";
+                status2.style.color = "red"
+            } else {
+                if (regex1.test(email)== false) {
+                    status2.innerHTML = "invalid email";
+                    status2.style.color = "red"
+                } else {
+                    status2.innerHTML = "valid email";
+                    status2.style.color = "green"
+                }
+            }
+
+            //mobile number validation
+            let mobile = document.getElementById("mobile").value;
+            let status3 = document.getElementById("status3");
+
+            let regex2 = /^[6-9]\d{9}$/; //example :987654321
+
+            if (mobile.length === 0) {
+                status3.innerHTML = "please enter mobile nor";
+                status3.style.color = "red";
+            } else {
+                if (regex2.test(mobile)=== false) {
+                    status3.innerHTML = "enter valid nor";
+                    status3.style.color = "red"
+                } else {
+                    status3.innerHTML = "valid mobile nor";
+                    status3.style.color = "green"
+                }
+            }
+
+            //city validation
+            let city = document.getElementById("city");
+            let status4 = document.getElementById("status4");
+           
+            if (city.value == "null") {
+                status4.innerHTML = "please select your city";
+                status4.style.color = "red"
+            } else {
+                status4.innerHTML = "valid selection";
+                status4.style.color = "green"
+            }
+
+            //gender selection
+            let status5 = document.getElementById("status5");
+            let gender = document.getElementById("male");
+            let gender2 = document.getElementById("female");
+
+            if(!gender.checked && !gender2.checked){
+                status5.innerHTML = "please select your gender";
+                status5.style.color = "red"
+            } else{
+                status5.innerHTML = "valid selection";
+                status5.style.color = "green"
+            }   
+        }
+    </script>
+</body>
+</html>

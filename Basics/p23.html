@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>With parameters, without return value Example:</h1>
+    </center>
+    <hr>
+
+    <script>
+        function studDetails(firstName, lastName){
+
+            //let firstname=100.77;
+            document.write(`<p>First Parameter value is :${firstName}</p>`);
+            document.write(`<p>Last Parameter value is :${lastName}</p>`);
+
+            let fn, ln, fullName;
+
+            fn = firstName;
+            ln = lastName;
+
+            document.write(`<p>first variable value is:${fn}</p>`);
+            document.write(`<p>last variable value is:${ln}</p>`);
+
+            fullName = fn + " " + ln;
+
+            return fullName;
+            document.write(`<p>full name variable value is: ${fullName}</p>`);     
+
+        }
+        document.write("with parameter and with return value..." ,studDetails("200",100));
+    </script>
+</body>
+</html>

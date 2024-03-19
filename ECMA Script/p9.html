@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>spread (...) operator with math constructor</h1>
+    </center>
+    <hr>
+    <script>
+        var num = [44,455,56,11,77,99,900];
+        console.log('num = ',num);
+        console.log('parameter (spread) =', ...num);
+
+        document.write(`<h3> max =${math.max(num)}</h3>`);
+        document.write(`<h3> max =${math.max([44,455,56,11,77,99,900])}</h3>`);
+
+        document.write(`<h3> max =${math.max(...num)}</h3>`);
+        document.write(`<h3> min =${math.min(44,455,56,11,77,99,900)}</h3>`);
+
+    </script>
+</body>
+</html>

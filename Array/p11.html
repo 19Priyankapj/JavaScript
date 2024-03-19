@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h2>10) splice();
+        </h2>
+        <p>the splice() method adds or removes array elements</p>
+        <p>the splice() method overwrites the original array</p>
+    </center>
+    <hr>
+    <p><b>SYNTAX :</b></p>
+    <pre>
+        array.splice(index, howmany, item1, item2....itemx);
+    </pre>
+    <hr>
+
+    <script>
+        let ary =[99,32,23,43,53];
+
+        document.write(`<p>before splice() : ${ary}</p>`);
+
+        ary.splice(1, 2, "A", "B", "C");
+        document.write(`<p>after splice : ${ary}</p>`);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>map() constructor</h1>
+    </center>
+    <hr>
+
+    <p>a map is constructor (basic maping of key and values)</p>
+    <p>maps are different than ana objects in that their keys can be anything (primitive values as well as objects) that not just strings and symbols</p>
+    <script>
+        var x = new Map(); //instance
+        /*instance.set("property","value")
+        instance.get("property")*/
+
+        x.set("id", 1232);
+        x.set("title", "javascript");
+        x.set("duration", "1month");
+        x.set("isEnable", true);
+
+        console.log(x);
+
+        console.log('id =',x.get('id'));
+        console.log('title =',x.get('title'));
+        console.log('duration =',x.get('duration'));
+
+        document.write(`<h3> ${x.get("id")}</h3>`);
+        document.write(`<h3> ${x.get("title")}</h3>`);
+        document.write(`<h3> ${x.get("duration")}</h3>`);
+
+
+
+
+    </script>
+</body>
+</html>

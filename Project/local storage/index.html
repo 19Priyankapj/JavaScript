@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+</head>
+<body>
+    <div class="main-wrapper">
+        <center>
+            <h1>simple CRUD operations using js - local storage</h1>
+        </center>
+
+        <div class="container">
+            <div>
+                <div class="cardbox">
+                    <p><b>Insert/Update data</b></p>
+                    <span>Enter a key and a value to add and / or update records</span>
+                    <div class="input-wrapper">
+                        <input id="inputKey" type="text" placeholder="Enter key"/>
+                        <input id="inputValue" type="text" placeholder="Enter value"/>
+                    </div>
+                    <button type="button" id="btninsert">Insert data</button>
+                </div>
+                <div class="cardbox">
+                    <p><b>read data</b></p>
+                    <span>enter a key and a value for yhe record</span>
+                    <div class="input-wrapper">
+                        <input type="text" id="inputreaddatakey" placeholder="enter key"/>
+                        <button type="button" id="btnreaderdata">read more</button>
+                    </div>
+                    <p id="readdatahere"></p>
+                </div>
+                <div class="cardbox">
+                    <p><b>delete data</b></p>
+                    <span>enter a key to delete the record associated with that data key</span>
+                    <div class="input-wrapper">
+                        <input id="inputdelkey" type="text" placeholder="enter key"/>
+                        <button type="button" id="btndelete">delete data</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="cardbox">
+                    <p><b>local storage</b></p>
+                    <span id="availRecords"></span>
+                    <p id="autofill"></p>
+                    <div id="isOutput"></div>
+                    <div id="deleteallbtn" class="delete-all">
+                    <button type="button" id="btnalldelete">delete all data</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>

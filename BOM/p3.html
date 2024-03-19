@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function loadhomepage(){
+            location.assign("https://be-practical.com/");
+        }
+    </script>
+
+    <button type="button" onclick="loadhomepage()">load home page</button>
+
+    <script>
+        function loadhomepage1(){
+            window.location.href = "https://be-practical.com/";
+        }
+    </script>
+
+    <button type="button" onclick="loadhomepage1()">load home page1</button>
+
+<script>
+    function forcereload(){
+        window.location.reload();  
+    }
+</script>
+
+<button type="button" onclick="forcereload()">reload page</button>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>object inheritance using proto</h1>
+    </center>
+    <hr>
+    <script>
+        let user = {
+            name: "mohan",
+            email: "mohan@gmail.com"
+        };
+        console.log(`USER =`,user);
+
+        let user1={
+            mobile : "1652457646465",
+            age: 32,
+            __proto__:user
+        };
+
+        cosole.log(`USER1 =`,user1);
+
+        let user2 ={
+            course: "javascript",
+            duration: "1.4months",
+            __proto__:user1
+        };
+
+        console.log(`USER2 =`,user2);
+
+        document.write(`<h3> ${user2.name}</h3>`);
+        document.write(`<h3> ${user2.email}</h3>`);
+        document.write(`<h3> ${user2.mobile}</h3>`);
+        document.write(`<h3> ${user2.age}</h3>`);
+        document.write(`<h3> ${user2.course}</h3>`);
+        document.write(`<h3> ${user2.duration}</h3>`);
+
+
+    </script>
+</body>
+</html>

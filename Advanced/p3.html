@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>anonymous callbacks function or immediate executive of a function</h1>
+    </center>
+    <hr>
+
+    <h2>JAVASCRIPT FUNCTION</h2>
+    <p>1)local function =function A (){}</p>
+    <p>2) expression function = let A = function(){}</p>
+    <p>3) arroe function = let a() = function(){}</p>
+    <p>4)callback function = foreach(function(item){})</p>
+    <p>5) closer function = function A(){function B(){} B();}</p>
+    <p>6) anonymous function or immediate executive of a function() ();</p>
+
+    <script>
+        //self constructor
+        //refresh onload
+        //self triggering function
+
+        //eaxample-1
+        (function(){alert("hi anonymous function");})();
+
+        //example-2
+        ((a,b)=>{
+            document.write(`parameter a value is :${a}`);
+            document.write(`parameter b value is :${b}`);
+        })(10,20);
+
+        //example-3
+        ((a,b)=>{
+            return a+b;
+        })
+        console.log((10,20));
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>addEventListener</h1>
+    </center>
+    <hr>
+    <button type="button" id="mybtn">click me</button>
+
+    <script>
+        //selectin button element
+        var btn = document.getElementById("mybtn");
+
+        //defining custom function
+        function sayhello(){
+            alert ("hi how r u doing?...");
+
+        }
+        //sayhello();
+
+        function setHoverColor(){
+            btn.style.background ="yellow";
+        }
+
+        function setNormalColor(){
+            btn.style.background ="";
+        }
+
+        btn.addEventListener('click',sayhello);
+        btn.addEventListener('mouseover',setHoverColor);
+        btn.addEventListener('mouseleave',setNormalColor);
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>user validation</h1>
+    </center>
+    <hr>
+
+    <form onsubmit="userhandler(event)">
+        <label for="">Enter user name:</label>
+        <input type="text" name="username" id="username" placeholder="user name" minlength="5" maxlength="15">
+
+        <strong id="status"></strong>
+        <button type="submit">SUBMIT USERS</button>
+    </form>
+
+    <script>
+        function userhandler(e){
+            e.preventDefault();
+
+            let user = document.getElementById("username").value;
+            let status = document.getElementById("status");
+
+            if (user.length === 0) {
+                status.innerHTML = "please enter user name"
+                status.style.color = "orangered"
+                
+            } else {
+                if (user,length <= 5) {
+                    status.innerHTML = "please enter valid user name"
+                    status.style.color = "orangered"
+                    
+                } else {
+                    status.innerHTML ="valid user name"
+                    status.style.color = "green"
+                    
+                }
+                
+            }
+        }
+
+    </script>
+</body>
+</html>

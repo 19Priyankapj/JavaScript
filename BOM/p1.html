@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getResolution(){
+            alert("total screen width is: "+screen.width);
+            alert("total screen height is: "+screen.height);
+            alert("total screen Avail width is: "+screen.availwidth);
+            alert("total screen  Avail width is: "+screen. availHeight);
+
+        }
+    </script>
+
+    <button type="button" onclick="getResolution();">get resolution</button>
+
+    <script>
+        function getColorDepth(){
+            alert("Your screen color depth is : "+screen.colorDepth);
+        }
+    </script>
+
+    <button type="button" onclick="getColorDepth();">get color depth</button>
+    
+    <script>
+        function getPixelDepth(){
+            alert("Your screen pixel depth is: "+screen.pixelDepth);
+
+        }
+    </script>
+
+    <button type="button" onclick="getPixelDepth();">get pixel depth</button>
+
+
+</body>
+</html>

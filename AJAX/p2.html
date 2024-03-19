@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>promises</h1>
+    </center>
+    <hr>
+    <h3>what is promise?</h3>
+    <p>promise is a built in constructor of javascript.</p>
+    <p>a promise object represents an operation which has produced or will eventually produce a value promises provide a robust way to wrap the possibility pending result of asynchronous request</p>
+
+    <h3>states of promises</h3>
+    <h5>1. pending</h5>
+    <p>the underlying operation has not yet completed or neither rejected</p>
+
+    <h5>2. fullfilled</h5>
+    <p>the operation has finishedd and promise is fullfilled with a response. (.then()) is used handle fulfilled responses.</p>
+
+    <h5>3. rejected</h5>
+    <p>the error occured during the operation is required with a reason .(.catch()) is uesd to catch the error.</p>
+
+    <h5>4. settled</h5>
+    <p>a promise a said to settled, (either resolved or rejected) once the promise is settled , it becomes immutable.</p>
+
+    <script>
+        let x = 99;
+
+        const myResponse = new Promise(function(resolve, reject){
+            if(x>100){
+                resolve("hi welcome to new promise response");
+            }else{
+                reject("oops sorry my value is meet the condition")
+            }
+        });
+
+        console.log(myResponse);
+        console.log(typeof myResponse);
+
+        myResponse.then(function(value){
+            //fullfilled response
+            alert(value);
+        }).catch(function(error){
+            //rejected reason
+            alert(error);
+        });
+    </script>
+</body>
+</html>

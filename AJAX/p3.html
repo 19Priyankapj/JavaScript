@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>promises</h1>
+    </center>
+    <hr>
+    <script>
+        fetch('https://panorbit.in/api/users.json')
+        .then(response => response.json()).then(date=>{
+            cosole.log("server data = ",data);
+            data.user.forEach(element => {
+                console.log("ForEach =",element);
+
+                let h2 = document.createElement('h2');
+                h2.innerHTML = element.name;
+
+                document.body.append(h2);
+
+                let img = document.createElement('img');
+                img.src = element.profilepicture;
+                document.body.append(img);
+
+                setTimeout(function(){img.remove()},4000);
+            });
+            
+        }).catch(error => {console.log(error.message)});
+    </script>
+</body>
+</html>

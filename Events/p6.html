@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: pink;
+            color: #fff;
+            padding: 12px;
+            width: 50%;
+            height: 500px;
+            overflow: auto;
+        }
+        h4{
+            padding: 10px;
+            background-color: crimson;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>onmousewheel() and onscroll()</h1>
+    </center>
+
+    <h4 id="output"></h4>
+
+    <div id="txt" onscroll="wheelHandler();" onmousewheel="wheelHandler()">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit illum saepe, mollitia ipsam delectus incidunt unde ratione vero laudantium dicta eius. Dolore commodi velit sequi pariatur ut modi, rerum optio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ab iste voluptatibus quis magnam libero eos laborum nemo, dolore vel corrupti numquam molestiae repellendus cum odit? Nisi libero sapiente exercitationem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci reprehenderit perferendis eaque deserunt veritatis distinctio earum. Deleniti dignissimos tempore, itaque, consequuntur sapiente, quae sunt nihil mollitia temporibus similique recusandae dolores!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit illum saepe, mollitia ipsam delectus incidunt unde ratione vero laudantium dicta eius. Dolore commodi velit sequi pariatur ut modi, rerum optio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ab iste voluptatibus quis magnam libero eos laborum nemo, dolore vel corrupti numquam molestiae repellendus cum odit? Nisi libero sapiente exercitationem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci reprehenderit perferendis eaque deserunt veritatis distinctio earum. Deleniti dignissimos tempore, itaque, consequuntur sapiente, quae sunt nihil mollitia temporibus similique recusandae dolores!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit illum saepe, mollitia ipsam delectus incidunt unde ratione vero laudantium dicta eius. Dolore commodi velit sequi pariatur ut modi, rerum optio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ab iste voluptatibus quis magnam libero eos laborum nemo, dolore vel corrupti numquam molestiae repellendus cum odit? Nisi libero sapiente exercitationem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci reprehenderit perferendis eaque deserunt veritatis distinctio earum. Deleniti dignissimos tempore, itaque, consequuntur sapiente, quae sunt nihil mollitia temporibus similique recusandae dolores!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit illum saepe, mollitia ipsam delectus incidunt unde ratione vero laudantium dicta eius. Dolore commodi velit sequi pariatur ut modi, rerum optio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ab iste voluptatibus quis magnam libero eos laborum nemo, dolore vel corrupti numquam molestiae repellendus cum odit? Nisi libero sapiente exercitationem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci reprehenderit perferendis eaque deserunt veritatis distinctio earum. Deleniti dignissimos tempore, itaque, consequuntur sapiente, quae sunt nihil mollitia temporibus similique recusandae dolores!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit illum saepe, mollitia ipsam delectus incidunt unde ratione vero laudantium dicta eius. Dolore commodi velit sequi pariatur ut modi, rerum optio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ab iste voluptatibus quis magnam libero eos laborum nemo, dolore vel corrupti numquam molestiae repellendus cum odit? Nisi libero sapiente exercitationem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci reprehenderit perferendis eaque deserunt veritatis distinctio earum. Deleniti dignissimos tempore, itaque, consequuntur sapiente, quae sunt nihil mollitia temporibus similique recusandae dolores!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit illum saepe, mollitia ipsam delectus incidunt unde ratione vero laudantium dicta eius. Dolore commodi velit sequi pariatur ut modi, rerum optio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ab iste voluptatibus quis magnam libero eos laborum nemo, dolore vel corrupti numquam molestiae repellendus cum odit? Nisi libero sapiente exercitationem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci reprehenderit perferendis eaque deserunt veritatis distinctio earum. Deleniti dignissimos tempore, itaque, consequuntur sapiente, quae sunt nihil mollitia temporibus similique recusandae dolores!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit illum saepe, mollitia ipsam delectus incidunt unde ratione vero laudantium dicta eius. Dolore commodi velit sequi pariatur ut modi, rerum optio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ab iste voluptatibus quis magnam libero eos laborum nemo, dolore vel corrupti numquam molestiae repellendus cum odit? Nisi libero sapiente exercitationem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci reprehenderit perferendis eaque deserunt veritatis distinctio earum. Deleniti dignissimos tempore, itaque, consequuntur sapiente, quae sunt nihil mollitia temporibus similique recusandae dolores!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit illum saepe, mollitia ipsam delectus incidunt unde ratione vero laudantium dicta eius. Dolore commodi velit sequi pariatur ut modi, rerum optio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ab iste voluptatibus quis magnam libero eos laborum nemo, dolore vel corrupti numquam molestiae repellendus cum odit? Nisi libero sapiente exercitationem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci reprehenderit perferendis eaque deserunt veritatis distinctio earum. Deleniti dignissimos tempore, itaque, consequuntur sapiente, quae sunt nihil mollitia temporibus similique recusandae dolores!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit illum saepe, mollitia ipsam delectus incidunt unde ratione vero laudantium dicta eius. Dolore commodi velit sequi pariatur ut modi, rerum optio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ab iste voluptatibus quis magnam libero eos laborum nemo, dolore vel corrupti numquam molestiae repellendus cum odit? Nisi libero sapiente exercitationem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci reprehenderit perferendis eaque deserunt veritatis distinctio earum. Deleniti dignissimos tempore, itaque, consequuntur sapiente, quae sunt nihil mollitia temporibus similique recusandae dolores!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit illum saepe, mollitia ipsam delectus incidunt unde ratione vero laudantium dicta eius. Dolore commodi velit sequi pariatur ut modi, rerum optio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ab iste voluptatibus quis magnam libero eos laborum nemo, dolore vel corrupti numquam molestiae repellendus cum odit? Nisi libero sapiente exercitationem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci reprehenderit perferendis eaque deserunt veritatis distinctio earum. Deleniti dignissimos tempore, itaque, consequuntur sapiente, quae sunt nihil mollitia temporibus similique recusandae dolores!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit illum saepe, mollitia ipsam delectus incidunt unde ratione vero laudantium dicta eius. Dolore commodi velit sequi pariatur ut modi, rerum optio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ab iste voluptatibus quis magnam libero eos laborum nemo, dolore vel corrupti numquam molestiae repellendus cum odit? Nisi libero sapiente exercitationem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci reprehenderit perferendis eaque deserunt veritatis distinctio earum. Deleniti dignissimos tempore, itaque, consequuntur sapiente, quae sunt nihil mollitia temporibus similique recusandae dolores!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit illum saepe, mollitia ipsam delectus incidunt unde ratione vero laudantium dicta eius. Dolore commodi velit sequi pariatur ut modi, rerum optio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ab iste voluptatibus quis magnam libero eos laborum nemo, dolore vel corrupti numquam molestiae repellendus cum odit? Nisi libero sapiente exercitationem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci reprehenderit perferendis eaque deserunt veritatis distinctio earum. Deleniti dignissimos tempore, itaque, consequuntur sapiente, quae sunt nihil mollitia temporibus similique recusandae dolores!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit illum saepe, mollitia ipsam delectus incidunt unde ratione vero laudantium dicta eius. Dolore commodi velit sequi pariatur ut modi, rerum optio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ab iste voluptatibus quis magnam libero eos laborum nemo, dolore vel corrupti numquam molestiae repellendus cum odit? Nisi libero sapiente exercitationem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci reprehenderit perferendis eaque deserunt veritatis distinctio earum. Deleniti dignissimos tempore, itaque, consequuntur sapiente, quae sunt nihil mollitia temporibus similique recusandae dolores!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit illum saepe, mollitia ipsam delectus incidunt unde ratione vero laudantium dicta eius. Dolore commodi velit sequi pariatur ut modi, rerum optio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ab iste voluptatibus quis magnam libero eos laborum nemo, dolore vel corrupti numquam molestiae repellendus cum odit? Nisi libero sapiente exercitationem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci reprehenderit perferendis eaque deserunt veritatis distinctio earum. Deleniti dignissimos tempore, itaque, consequuntur sapiente, quae sunt nihil mollitia temporibus similique recusandae dolores!</p>
+
+    </div>
+    <script>
+        function wheelHandler(){
+            document.getAnimations("output").innerHTML = document.getElementById("txt").scrollTop + "px";
+        }
+    </script>
+</body>
+</html>

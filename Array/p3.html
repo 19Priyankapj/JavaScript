@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h2>1)join();</h2>
+        <p>the join() returns a new string by concatinating all of the elements in an array separated by commas or a specified separated string</p>
+
+    </center>
+    <hr>
+    <p><b>SYNTAX :</b></p>
+    <PRE>array.join(separator);
+    </PRE>
+    <hr>
+    <script>
+        let bikes = ["yamaha", "bajaj", "tvs", "honda"];
+
+        document.write(`<p>array.join() : ${bikes.join()}</p>`);
+        document.write(`<p>array.join("") : ${bikes.join(" ")}</p>`);
+        document.write(`<p>array.join(" - ") : ${bikes.join(' - ')}</p>`);
+
+    </script>
+</body>
+</html>

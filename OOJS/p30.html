@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <center>
+    <h1>class es-6</h1>
+    <p>parametreised class</p>
+   </center> 
+   <hr>
+   <script>
+    class Sum{
+        constructor(x,z){
+            this.a=x;
+            this.b=z;
+
+        }
+        calculate(){
+            return this.a +this.b;
+        }
+    }
+
+    let s =new Sum(12,44);
+    let si =new Sum(22,43);
+
+    console.log('s =',s);
+    console.log('s1 =',s1);
+
+    document.write(`<h3> Sum = ${s.calculate()}</h3>`);
+    document.write(`<h3> Sum1 = ${s1.calculate()}</h3>`);
+
+
+   </script>
+</body>
+</html>

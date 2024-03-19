@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>SCOPE</h1>
+    </center>
+    <hr>
+    <script>
+        let x = 15;
+
+        if(x>10){
+            var a=155;
+            let b=122;
+            const c=144;
+
+            document.write(`<h3>global x (block scope) = ${ x } </h3>`);
+            //global scope
+            document.write(`<h3>global A (block scope) = ${ a } </h3>`);
+            //global scope
+            document.write(`<h3>global B (block scope) = ${ b } </h3>`);
+            //block scope
+            document.write(`<h3>global C (block scope) = ${ c } </h3>`);
+            //block scope
+        }
+        document.write("<hr>");
+        document.write(`<h3>global X (global scope) = ${ x }</h3>`);//global scope
+
+        document.write(`<h3>global A (global scope) = ${ a }</h3>`);//global scope
+
+        document.write(`<h3>global B (global scope) = ${ b }</h3>`);//block scope
+
+        document.write(`<h3>global C (global scope) = ${ c }</h3>`);//block scope
+
+    </script>
+</body>
+</html>

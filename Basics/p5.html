@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js - basics</title>
+</head>
+<body>
+    <center>
+        <h1>JavaScript Generating Output...</h1>
+    </center>
+    <hr>
+    <p id="res">RESULT :</p>
+
+    <script>
+        let firstName =10, lastName =20, sum;
+        sum = firstName + lastName; //sum=10+20
+
+        document.write(`<p><b>document.write : ${sum}</b></p>`);
+        console.log('console.log=>', sum);
+
+        alert("Alert : " +sum);
+        confirm("Confirm :" +sum);
+        prompt("Prompt :" +sum);
+
+        document.getElementById("res").innerHtML += sum;
+    </script>
+</body>
+</html>

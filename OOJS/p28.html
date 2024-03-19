@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write(`<h1>Class declarations</h1>`);
+
+        class User{
+            constructor(){
+                this.name ='raju';
+                this.email ='raju@gmail.com';
+                document.write(`<h1>constructor method</h1>`);
+            }
+            display(){
+                document.write(`<h1> name is ${this.name}</h1>`);
+                let x = 100;
+                document.write(`<h1> x value is ${this.name}</h1>`);
+            }
+
+            print(){
+                document.write(`<h1> email is ${this.email}</h1>`);
+
+            }
+        }
+        let x = new User();
+        console.log('x = ',x);
+
+        document.write(`<h1> name =${x.name}</h1>`);
+        document.write(`<h1> email =${x.email}</h1>`);
+
+        document.write('<hr>');
+
+        x.display();
+        x.print();
+
+    </script>
+</body>
+</html>

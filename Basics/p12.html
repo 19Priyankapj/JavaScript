@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        div {
+            margin-bottom: 20px;
+        }
+       
+        
+        div>label{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+            font-weight: 100%;
+        }
+        button{
+            padding: 20px;
+            border-radius: 30px;
+            background-color: black;
+            color: #fff;
+        }
+        button:hover{
+            background-color: transparent;
+            color: black;
+        }
+
+        
+    </style>
+
+    <center>
+        <h1>
+            Use Switch Key = Add,Sub,Mul,Div,Rem a and b
+        </h1>
+    </center>
+    <hr>
+    <form onsubmit="codehandler(event)">
+        <div>
+            <label for="op">Choose An Operation</label>
+            <select name="op" id="op">
+                <option value="add">Addition</option>
+                <option value="sub">Subtraction</option>
+                <option value="mul">Multiplication</option>
+                <option value="div">Division</option>
+                <option value="mod">Modulus</option>
+            </select>
+        </div>
+        <div>
+            <label for="inpA"> Enter Input a?</label>
+            <input type="number" name="inpA" id="inpA" required>
+        </div>
+        <div>
+            <label for="inpB"> Enter Input b?</label>
+            <input type="number" name="inpB" id="inpB" required>
+        </div>
+        <button type="submit">Execute Code</button>
+    </form>
+    <hr>
+
+    <div id="result"></div>
+
+    <script>
+        function codehandler(event){
+            event.preventDefault();
+
+            let key = document.getElementById('op').value;
+            let a = document.getElementById('inpA').value;
+            let b = document.getElementById('inpB').value;
+
+            let x = Number(a);
+            let y = Number(b);
+            let res = 0;
+
+            /*document.write typeof*/
+
+            switch (key) {
+                case 'add' :
+                    res = x+y;
+                    document.title = `Addition = ${res}`;
+                    document.getElementById('result').innerHTML = `<h1> Addition of 2 numbers = ${res}</h1>`;
+                    break;
+
+                    case 'sub' :
+                    res = x-y;
+                    document.title = `Subtraction = ${res}`;
+                    document.getElementById('result').innerHTML = `<h1> Subtraction of 2 numbers = ${res}</h1>`;
+                    break;
+
+                    case "mul" :
+                    res = x*y;
+                    document.title = `Multiplication = ${res}`;
+                    document.getElementById('result').innerHTML = `<h1> Multiplication of 2 numbers = ${res}</h1>`;
+                    break;
+
+                    case 'div' :
+                    if(x>y){
+                        res = x/y;
+                    } else{
+                        res =y/x;
+                    }
+                    document.title = `Division = ${res}`;
+                    document.getElementById('result').innerHTML = `<h1> Division of 2 numbers = ${res}</h1>`;
+                    break;
+
+                    case 'mod' :
+                    if(x>y){
+                        res = x%y;
+                    } else{
+                        res =y%x;
+                    }
+
+                    document.title = `Modulus = ${res}`;
+                    document.getElementById('result').innerHTML = `<h1> Modulus of 2 numbers = ${res}</h1>`;
+                    break;
+
+                    default : document.title = `choose proper input`;
+                    document.getElementById('result').innerHTML =`<h1>Choose proper operation</h1>`;
+                    break;
+            }
+
+        }
+        
+    </script>
+    </body>
+
+</html>

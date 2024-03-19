@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>object.defineproperty()</h1>
+    </center>
+    <hr>
+
+    <script>
+        "use strict"; 
+
+        var user = {};
+
+        console.log('before=',user);
+
+        Object.definePropery(user,"name",{
+            value: "naveen",
+            writable: false // throw type error in strict mode
+        });
+
+        try{
+            user.name = "suma";
+        }catch(err){
+            console.log(err)
+        }
+
+        console.log('after =', user);
+
+        /*
+        during assignment of new value to the property , the js compiler validate it writable is true => re assign the value to the obj property if variable is false => throws an error (in strict mode)
+        */
+    </script>
+</body>
+</html>

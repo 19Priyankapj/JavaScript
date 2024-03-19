@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>deleting defineProperties
+        </h1>
+    </center>
+    <hr>
+    <script>
+        var x = new Object();
+
+        x.name = "tat nexon";
+        x.model = 2021;
+        x,color = "red";
+
+        console.log("before delete x =",x);
+
+        delete x.model;
+        delete x.name;
+        delete x.color;
+
+        console.log('ater delete x =',x);
+    </script>
+</body>
+</html>

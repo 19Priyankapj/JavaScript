@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <center>
+    <h1>object.freeze()</h1>
+   </center> 
+   <hr>
+   <script>
+    "use strict";
+    const user ={
+        name: "raj"
+    };
+
+    console.log('before name', user.name);
+    try{
+        Object.freeze(user); //freeze the object *(readonly) not allow to accept the values in strict
+        user.name ="suman";
+    }catch(error){
+        console.log(error.message)
+    }
+    console.log('after name',user.name);
+   </script>
+</body>
+</html>
